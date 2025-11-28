@@ -1,5 +1,7 @@
 package com.example.gestorDeProjetos.models;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -14,6 +16,7 @@ public class Issue {
 
     private String titulo;
     private String descricao;
+    private LocalDateTime criadoEm;
 
     @Enumerated(EnumType.STRING)
     private IssueStatus status;
