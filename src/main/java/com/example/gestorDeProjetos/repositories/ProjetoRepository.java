@@ -1,4 +1,9 @@
 package com.example.gestorDeProjetos.repositories;
-import org.springframework.data.jpa.repository.JpaRepository;
+
+
 import com.example.gestorDeProjetos.models.Projeto;
-public interface ProjetoRepository extends JpaRepository<Projeto, Integer>{}
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProjetoRepository extends JpaRepository<Projeto, Integer> {}
