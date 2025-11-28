@@ -1,3 +1,7 @@
 package com.example.gestorDeProjetos.repositories;
-public interface IssueRpository extends JpaRepository<Issue, Integer>{}
-  
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IssueRepository extends JpaRepository<Integer, String> {
+    //
+}
