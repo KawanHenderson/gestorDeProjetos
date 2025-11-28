@@ -2,5 +2,6 @@ package com.example.gestorDeProjetos.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IssueRepository extends JpaRepository {
+public interface IssueRepository extends JpaRepository<Integer, String> {
+    //
 }
