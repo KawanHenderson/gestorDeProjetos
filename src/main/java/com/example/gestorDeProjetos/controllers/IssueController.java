@@ -6,7 +6,6 @@ import com.example.gestorDeProjetos.models.Issue;
 import com.example.gestorDeProjetos.services.IssueService;
 import com.example.gestorDeProjetos.exceptions.ResourceNotFoundException;
 
-import org.jetbrains.annotations.NotNull;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
@@ -63,7 +62,7 @@ public class IssueController {
     }
 
     @PutMapping("/issues/{id}")
-    public ResponseEntity<?> atualizarIssue(@PathVariable Integer id, @NotNull @RequestBody IssueDtoIn issueDtoIn) {
+    public ResponseEntity<?> atualizarIssue(@PathVariable Integer id, @RequestBody IssueDtoIn issueDtoIn) {
         try {
             Issue dadosAtualizados = new Issue();
             dadosAtualizados.setTitulo(issueDtoIn.getTitulo());
