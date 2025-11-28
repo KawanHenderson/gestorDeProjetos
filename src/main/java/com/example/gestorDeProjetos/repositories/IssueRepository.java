@@ -1,3 +1,5 @@
 package com.example.gestorDeProjetos.repositories;
-public interface IssueRpository extends JpaRepository<Issue, Integer>{}
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.gestorDeProjetos.models.Issue;
+public interface IssueRepository extends JpaRepository<Issue, Integer>{}
   
