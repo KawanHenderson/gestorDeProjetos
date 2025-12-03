@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter @Setter
 public class ProjetoDtoIn {
-    private String name;
+    private String nome;
     private String descricao;
     private Integer idProjeto;
 }
